@@ -1,0 +1,135 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body {
+	line-height: 1.1;
+}
+
+header {
+	width: 100%;
+	background-color: black;
+	color: white;
+
+	padding: 18px 9px;
+
+	padding-left: 18px;
+	padding-right: 18px;
+
+	.logo {
+		img {
+			vertical-align: middle;
+			padding: 0;
+
+			margin: 8px;
+		}
+
+		.brand {
+			font-size: 24pt;
+			font-weight: bold;
+
+			vertical-align: middle;
+		}
+	}
+}
+
+section#hero {
+	width: 100%;
+	min-height: 500px;
+
+	background-color: #d8d8d8;
+
+	padding: 8px 36px;
+
+	h2 {
+		font-size: 36pt;
+
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	p {
+		font-size: 16pt;
+
+		max-width: 380px;
+		line-height: 1.5;
+
+		padding-bottom: 30px;
+	}
+
+	.call-to-action {
+		max-width: 380px;
+	}
+}
+
+img {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+section#feature-white {
+	background-color: #e8e8e8;
+	min-height: 380px;
+	text-align: center;
+
+	h2 {
+		font-size: 26pt;
+		text-align: center;
+
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	p {
+		font-size: 16pt;
+		text-align: center;
+
+		line-height: 1.5;
+	}
+
+	img {
+		margin: 0 auto;
+		vertical-align: middle;
+	}
+}
+
+section#feature-dark {
+	background-color: rgb(26, 25, 31);
+	min-height: 380px;
+	text-align: center;
+
+	color: #d8d8d8;
+
+	h2 {
+		font-size: 26pt;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+section#call-to-action {
+	text-align: right;
+	min-height: 380px;
+	padding: 8px 36px;
+
+	h2 {
+		font-size: 26pt;
+		padding-top: 30px;
+		padding-bottom: 14px;
+	}
+
+	h3 {
+		font-size: 16pt;
+	}
+
+	p {
+		font-size: 14pt;
+
+		line-height: 1.5;
+
+		padding-bottom: 30px;
+	}
+}
