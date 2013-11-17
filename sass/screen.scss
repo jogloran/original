@@ -5,6 +5,8 @@
 
 @import "compass/reset";
 
+$light-colour: #e8e8e8;
+
 body {
 	line-height: 1.1;
 }
@@ -14,9 +16,9 @@ button {
 }
 
 h2 {
-	font-family: 'Miso Bold';
+	font-family: 'Roboto Slab Bold';
 
-	font-size: 42pt;
+	font-size: 42px;
 }
 
 header {
@@ -44,6 +46,7 @@ header {
 			// border-radius: 20px;
 			// width: 40px;
 			// height: 40px;
+			border: 0px;
 		}
 
 		.brand {
@@ -60,28 +63,33 @@ header {
 section#hero {
 	background: url('../images/hero_bg.jpg') 50% 50%;
 
+	text-align: center;
+
 	width: 100%;
 	min-height: 500px;
 
 	background-color: #d8d8d8;
+	color: white;
 
 	padding: 8px 36px;
 
 	input {
 		background: rgba(255, 255, 255, 0.5);
+
+
 	}
 
 	h2 {
 		font-size: 36pt;
 
 		padding-top: 60px;
-		padding-bottom: 30px;
+		padding-bottom: 16px;
 	}
 
 	p {
 		font-size: 16pt;
 
-		max-width: 380px;
+		// max-width: 380px;
 		line-height: 1.5;
 
 		padding-bottom: 30px;
@@ -94,7 +102,7 @@ section#hero {
 	}
 
 	.call-to-action {
-		max-width: 380px;
+		// max-width: 380px;
 	}
 }
 
@@ -111,7 +119,7 @@ img {
 }
 
 section#feature-white {
-	background-color: #e8e8e8;
+	background-color: $light-colour;
 	min-height: 380px;
 	text-align: center;
 
@@ -167,14 +175,16 @@ section#feature-dark {
 }
 
 section#call-to-action {
-	text-align: right;
+	text-align: center;
 	min-height: 380px;
 	padding: 8px 36px;
+
+	background-color: $light-colour;
 
 	h2 {
 		font-size: 32pt;
 		padding-top: 30px;
-		padding-bottom: 14px;
+		padding-bottom: 30px;
 	}
 
 	h3 {
@@ -190,6 +200,22 @@ section#call-to-action {
 	}
 }
 
+section#us {
+	background-color: #9a9a9a;
+	min-height: 200px;
+
+	padding: 36px 36px;
+
+	.column-header {
+		text-align: center;
+		text-transform: uppercase;
+
+		font-size: 10pt;
+
+		padding-bottom: 12px;
+	}
+}
+
 @font-face {
   font-family: 'Miso Bold';
   src: url('../fonts/miso-bold.otf');
@@ -200,6 +226,11 @@ section#call-to-action {
   src: url('../fonts/miso-regular.otf');
 }
 
+@font-face {
+  font-family: 'Roboto Slab Bold';
+  src: url('../fonts/RobotoSlab-Bold.ttf');
+}
+
 .category {
 	text-transform: uppercase;
 
@@ -207,4 +238,20 @@ section#call-to-action {
 	font-size: 16pt;
 
 	padding-bottom: 12px;
+}
+
+::-webkit-input-placeholder {
+   color: #6e6e6e !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #6e6e6e !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #6e6e6e !important;
+}
+
+:-ms-input-placeholder {  
+   color: #6e6e6e !important;
 }

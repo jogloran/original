@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,66 +24,66 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../.rvm/gems/ruby-head-zombie/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
   line-height: 1.1;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 button {
   font-family: 'Miso Bold';
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 h2 {
-  font-family: 'Miso Bold';
-  font-size: 42pt;
+  font-family: 'Roboto Slab Bold';
+  font-size: 42px;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 header {
   width: 100%;
   background-color: black;
@@ -94,13 +94,14 @@ header {
   padding-left: 18px;
   padding-right: 18px;
 }
-/* line 36, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 header .logo img {
   vertical-align: middle;
   padding: 0;
   margin: 8px;
+  border: 0px;
 }
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 header .logo .brand {
   font-size: 28pt;
   font-weight: bold;
@@ -108,42 +109,39 @@ header .logo .brand {
   font-family: 'Miso Bold';
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 section#hero {
   background: url("../images/hero_bg.jpg") 50% 50%;
+  text-align: center;
   width: 100%;
   min-height: 500px;
   background-color: #d8d8d8;
+  color: white;
   padding: 8px 36px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 section#hero input {
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 74, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 section#hero h2 {
   font-size: 36pt;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 section#hero p {
   font-size: 16pt;
-  max-width: 380px;
   line-height: 1.5;
   padding-bottom: 30px;
 }
-/* line 90, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 section#hero img.screenshot {
   width: 100%;
   margin-top: 60px;
 }
-/* line 96, ../sass/screen.scss */
-section#hero .call-to-action {
-  max-width: 380px;
-}
 
-/* line 101, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 img {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -154,33 +152,33 @@ img {
   border: 1px solid rgba(75, 89, 102, 0.4);
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 section#feature-white {
   background-color: #e8e8e8;
   min-height: 380px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 section#feature-white h2 {
   font-size: 32pt;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 128, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 section#feature-white p {
   font-size: 16pt;
   text-align: center;
   line-height: 1.5;
 }
-/* line 135, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 section#feature-white img {
   margin: 0 auto;
   vertical-align: middle;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 section#feature-dark {
   background-color: #1a191f;
   min-height: 380px;
@@ -188,44 +186,59 @@ section#feature-dark {
   color: #d8d8d8;
   padding-bottom: 30px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 162, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 section#call-to-action {
-  text-align: right;
+  text-align: center;
   min-height: 380px;
   padding: 8px 36px;
+  background-color: #e8e8e8;
 }
-/* line 174, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-top: 30px;
-  padding-bottom: 14px;
+  padding-bottom: 30px;
 }
-/* line 180, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 184, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
+}
+
+/* line 203, ../sass/screen.scss */
+section#us {
+  background-color: #9a9a9a;
+  min-height: 200px;
+  padding: 36px 36px;
+}
+/* line 209, ../sass/screen.scss */
+section#us .column-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10pt;
+  padding-bottom: 12px;
 }
 
 @font-face {
@@ -238,10 +251,37 @@ section#call-to-action p {
   src: url("../fonts/miso-regular.otf");
 }
 
-/* line 203, ../sass/screen.scss */
+@font-face {
+  font-family: 'Roboto Slab Bold';
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+}
+
+/* line 234, ../sass/screen.scss */
 .category {
   text-transform: uppercase;
   color: #d8d8d8;
   font-size: 16pt;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+}
+
+/* line 243, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #6e6e6e !important;
+}
+
+/* line 247, ../sass/screen.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #6e6e6e !important;
+}
+
+/* line 251, ../sass/screen.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #6e6e6e !important;
+}
+
+/* line 255, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #6e6e6e !important;
 }
