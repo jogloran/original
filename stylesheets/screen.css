@@ -159,28 +159,28 @@ section#feature-white {
   background-color: #e8e8e8;
   min-height: 380px;
   text-align: center;
+  padding-bottom: 30px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 section#feature-white h2 {
   font-size: 32pt;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 126, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 section#feature-white p {
   font-size: 16pt;
   text-align: center;
   line-height: 1.5;
 }
-/* line 133, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 section#feature-white img {
   margin: 0 auto;
-  margin-bottom: 30px;
   vertical-align: middle;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 section#feature-dark {
   background-color: #1a191f;
   min-height: 380px;
@@ -188,30 +188,40 @@ section#feature-dark {
   color: #d8d8d8;
   padding-bottom: 30px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 /* line 157, ../sass/screen.scss */
+section#feature-dark p {
+  font-size: 18pt;
+  line-height: 1.1;
+}
+/* line 162, ../sass/screen.scss */
+section#feature-dark header {
+  text-transform: uppercase;
+  color: #d8d8d8;
+}
+
+/* line 169, ../sass/screen.scss */
 section#call-to-action {
   text-align: right;
   min-height: 380px;
   padding: 8px 36px;
 }
-/* line 162, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 14px;
 }
-/* line 168, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 172, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
@@ -226,4 +236,12 @@ section#call-to-action p {
 @font-face {
   font-family: 'Miso Regular';
   src: url("../fonts/miso-regular.otf");
+}
+
+/* line 203, ../sass/screen.scss */
+.category {
+  text-transform: uppercase;
+  color: #d8d8d8;
+  font-size: 16pt;
+  padding-bottom: 8px;
 }
