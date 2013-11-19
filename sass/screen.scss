@@ -77,6 +77,11 @@ header {
 
 #bk {
 	background: url('../images/hero_bg.jpg') 50% 50%;
+	background-size: cover;
+}
+
+.navbar {
+	margin-bottom: 0;
 }
 
 section#hero {
@@ -323,4 +328,13 @@ section#us {
 
 #subscription-message {
 	padding: 16px 0;
+}
+
+.column-separator {
+	text-align: center;
+	padding: 8px 0;
+}
+
+hr {
+	border-top: 1px solid #b8b8b8;
 }
