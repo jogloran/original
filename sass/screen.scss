@@ -64,7 +64,8 @@ header {
 
 			vertical-align: middle;
 
-			font-family: 'Miso Bold';
+			font-family: 'Futura-MediumItalic';
+			font-style: italic;
 		}
 	}
 }
@@ -82,6 +83,8 @@ section#hero {
 
 	padding: 8px 36px;
 
+	text-shadow: 0px 2px 6px #6a6a6a;
+
 	input {
 		background: rgba(255, 255, 255, 0.5);
 
@@ -93,6 +96,7 @@ section#hero {
 
 		padding-top: 60px;
 		padding-bottom: 16px;
+
 	}
 
 	p {
@@ -220,6 +224,8 @@ section#us {
 	color: $us-section-colour;
 
 	.column-header {
+		text-shadow: 0px 2px 2px #ccc;
+
 		text-align: center;
 		text-transform: uppercase;
 
@@ -233,6 +239,19 @@ section#us {
 		text-align: center;
 
 		color: lighten($us-section-colour, 30%);
+	}
+
+	ul {
+		text-align: center;
+
+		li {
+			padding-bottom: 4px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $us-section-colour;
 	}
 }
 
@@ -251,8 +270,26 @@ section#us {
   src: url('../fonts/RobotoSlab-Bold.ttf');
 }
 
+@font-face {
+	font-family: 'GeosansLight-Oblique';
+	src: url('../fonts/GeosansLight-Oblique.ttf');
+}
+
+@font-face {
+	font-family: 'Cicle Gordita';
+	src: url('../fonts/Cicle Gordita.ttf');
+}
+
+@font-face {
+	font-family: 'Corbert Italic';
+	src: url('../fonts/Corbert Italic.otf');
+}
+
 .category {
 	text-transform: uppercase;
+	font-family: 'Helvetica Neue';
+	letter-spacing: -0.03em;
+	font-weight: bold;
 
 	color: #d8d8d8;
 	font-size: 16pt;
