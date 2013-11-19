@@ -23,11 +23,10 @@ h2 {
 
 header {
 	width: 100%;
-	background-color: black;
-	background: url('../images/navbar_bg.png');
+
 	color: white;
 
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	// border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
 	padding: 18px 9px;
 
@@ -41,6 +40,10 @@ header {
 
 	a:not(:first-child) {
 		padding-left: 12px;
+	}
+
+	.social i {
+		text-shadow: 0px 4px 2px #3a3a3a;
 	}
 
 	.logo {
@@ -66,19 +69,24 @@ header {
 
 			font-family: 'Futura-MediumItalic';
 			font-style: italic;
+
+			text-shadow: 0px 4px 2px #3a3a3a;
 		}
 	}
 }
 
-section#hero {
+#bk {
 	background: url('../images/hero_bg.jpg') 50% 50%;
+}
+
+section#hero {
+	// background: url('../images/hero_bg.jpg') 50% 50%;
 
 	text-align: center;
 
 	width: 100%;
 	min-height: 500px;
 
-	background-color: #d8d8d8;
 	color: white;
 
 	padding: 8px 36px;
