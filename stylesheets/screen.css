@@ -71,20 +71,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1.1;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  min-width: 100%;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 button {
   font-family: 'Miso Bold';
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 h2 {
   font-family: 'Roboto Slab Bold';
   font-size: 42px;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 header {
   width: 100%;
   color: white;
@@ -92,27 +93,27 @@ header {
   padding-left: 18px;
   padding-right: 18px;
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 header a {
   text-decoration: none;
   color: white;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 header a:not(:first-child) {
   padding-left: 12px;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 header .social i {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 header .logo img {
   vertical-align: middle;
   padding: 0;
   margin: 8px;
   border: 0px;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header .logo .brand {
   font-size: 28pt;
   font-weight: bold;
@@ -122,18 +123,18 @@ header .logo .brand {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #bk {
   background: url("../images/hero_bg.jpg") 50% 50%;
   background-size: cover;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 section#hero {
   text-align: center;
   width: 100%;
@@ -142,29 +143,29 @@ section#hero {
   padding: 8px 36px;
   text-shadow: 0px 2px 6px #6a6a6a;
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 section#hero input {
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 section#hero h2 {
   font-size: 36pt;
   padding-top: 60px;
   padding-bottom: 16px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 section#hero p {
   font-size: 16pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 section#hero img.screenshot {
   width: 100%;
   margin-top: 60px;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 img {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -175,33 +176,33 @@ img {
   border: 1px solid rgba(75, 89, 102, 0.4);
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 section#feature-white {
   background-color: #e8e8e8;
   min-height: 380px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 section#feature-white h2 {
   font-size: 32pt;
   text-align: center;
   padding-top: 30px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 section#feature-white p {
   font-size: 16pt;
   text-align: center;
   line-height: 1.5;
   padding: 30px 0;
 }
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 section#feature-white img {
   margin: 0 auto;
   vertical-align: middle;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 section#feature-dark {
   background-color: #1a191f;
   min-height: 380px;
@@ -209,55 +210,55 @@ section#feature-dark {
   color: #d8d8d8;
   padding-bottom: 30px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 199, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 section#call-to-action {
   text-align: center;
   min-height: 380px;
   padding: 8px 36px;
   background-color: #e8e8e8;
 }
-/* line 213, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 section#us {
   background-color: #9a9a9a;
   min-height: 200px;
   padding: 36px 36px;
   color: #202020;
 }
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 section#us .column-header {
   text-shadow: 0px 2px 2px #ccc;
   text-align: center;
@@ -265,21 +266,21 @@ section#us .column-header {
   font-size: 10pt;
   padding-bottom: 12px;
 }
-/* line 252, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 section#us .built-with {
   padding: 30px 0;
   text-align: center;
   color: #6d6d6d;
 }
-/* line 259, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 section#us ul {
   text-align: center;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 section#us ul li {
   padding-bottom: 4px;
 }
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 section#us a {
   text-decoration: none;
   color: #202020;
@@ -315,7 +316,7 @@ section#us a {
   src: url("../fonts/Corbert Italic.otf");
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .category {
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
@@ -326,40 +327,40 @@ section#us a {
   padding-bottom: 12px;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #6e6e6e !important;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #6e6e6e !important;
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #6e6e6e !important;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 :-ms-input-placeholder {
   color: #6e6e6e !important;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #subscription-message {
   padding: 16px 0;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .column-separator {
   text-align: center;
   padding: 8px 0;
 }
 
-/* line 340, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 hr {
   border-top: 1px solid #b8b8b8;
 }
