@@ -34,6 +34,15 @@ header {
 	padding-left: 18px;
 	padding-right: 18px;
 
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:not(:first-child) {
+		padding-left: 12px;
+	}
+
 	.logo {
 		img {
 			vertical-align: middle;
@@ -130,7 +139,6 @@ section#feature-white {
 		text-align: center;
 
 		padding-top: 30px;
-		padding-bottom: 30px;
 	}
 
 	p {
@@ -138,6 +146,8 @@ section#feature-white {
 		text-align: center;
 
 		line-height: 1.5;
+
+		padding: 30px 0;
 	}
 
 	img {
@@ -206,6 +216,9 @@ section#us {
 
 	padding: 36px 36px;
 
+	$us-section-colour: rgb(32, 32, 32);
+	color: $us-section-colour;
+
 	.column-header {
 		text-align: center;
 		text-transform: uppercase;
@@ -213,6 +226,13 @@ section#us {
 		font-size: 10pt;
 
 		padding-bottom: 12px;
+	}
+
+	.built-with {
+		padding: 30px 0;
+		text-align: center;
+
+		color: lighten($us-section-colour, 30%);
 	}
 }
 
@@ -254,4 +274,8 @@ section#us {
 
 :-ms-input-placeholder {  
    color: #6e6e6e !important;
+}
+
+#subscription-message {
+	padding: 16px 0;
 }
