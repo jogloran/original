@@ -81,6 +81,9 @@ header {
 			font-family: 'Futura-MediumItalic';
 			font-style: italic;
 
+			position: relative;
+			left: -6px;
+
 			text-shadow: 0px 4px 2px #3a3a3a;
 		}
 	}
@@ -110,7 +113,7 @@ section#hero {
 	text-shadow: 0px 2px 6px #6a6a6a;
 
 	input {
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.7);
 	}
 
 	.muted {
@@ -333,19 +336,19 @@ section#us {
 }
 
 ::-webkit-input-placeholder {
-   color: #6e6e6e !important;
+   color: #4d4d4d !important;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #6e6e6e !important;
+   color: #4d4d4d !important;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #6e6e6e !important;
+   color: #4d4d4d !important;
 }
 
 :-ms-input-placeholder {  
-   color: #6e6e6e !important;
+   color: #4d4d4d !important;
 }
 
 #subscription-message {
