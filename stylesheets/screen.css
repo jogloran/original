@@ -74,11 +74,6 @@ body {
   overflow-x: hidden;
 }
 
-/* line 17, ../sass/screen.scss */
-button {
-  font-family: 'Miso Bold';
-}
-
 /* line 21, ../sass/screen.scss */
 h2 {
   font-family: 'Roboto Slab Bold';

@@ -30,7 +30,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
     $.fn.ajaxChimp = function (options) {
         var form = this;
         var email = form.find('input[type=email]');
-        var label = form.find('#subscription-message');
+        var label = $('body').find('#subscription-message');
 
         var settings = $.extend({
             'url': form.attr('action')
