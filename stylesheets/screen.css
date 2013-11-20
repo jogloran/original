@@ -206,54 +206,59 @@ section#feature-dark {
   padding-bottom: 30px;
 }
 /* line 187, ../sass/screen.scss */
+section#feature-dark img {
+  width: 200px;
+  height: 200px;
+}
+/* line 192, ../sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 200, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 section#call-to-action {
   text-align: center;
   min-height: 380px;
   padding: 8px 36px;
   background-color: #e8e8e8;
 }
-/* line 214, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 220, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 224, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 section#us {
   background-color: #9a9a9a;
   min-height: 200px;
   padding: 36px 36px;
   color: #202020;
 }
-/* line 242, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 section#us .column-header {
   text-shadow: 0px 2px 2px #ccc;
   text-align: center;
@@ -261,21 +266,21 @@ section#us .column-header {
   font-size: 10pt;
   padding-bottom: 12px;
 }
-/* line 253, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 section#us .built-with {
   padding: 30px 0;
   text-align: center;
   color: #6d6d6d;
 }
-/* line 260, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 section#us ul {
   text-align: center;
 }
-/* line 263, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 section#us ul li {
   padding-bottom: 4px;
 }
-/* line 268, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 section#us a {
   text-decoration: none;
   color: #202020;
@@ -311,7 +316,7 @@ section#us a {
   src: url("../fonts/Corbert Italic.otf");
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .category {
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
@@ -322,40 +327,40 @@ section#us a {
   padding-bottom: 12px;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #6e6e6e !important;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #6e6e6e !important;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #6e6e6e !important;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 :-ms-input-placeholder {
   color: #6e6e6e !important;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #subscription-message {
   padding: 16px 0;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .column-separator {
   text-align: center;
   padding: 8px 0;
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 hr {
   border-top: 1px solid #b8b8b8;
 }
