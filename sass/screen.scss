@@ -4,8 +4,16 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 $light-colour: #e8e8e8;
+
+a {
+	&:hover, &:focus {
+	    color: rgb(222, 207, 173);
+	    @include transition(color 0.6s ease);
+	}
+}
 
 body {
 	line-height: 1.1;
@@ -103,8 +111,15 @@ section#hero {
 
 	input {
 		background: rgba(255, 255, 255, 0.5);
+	}
 
+	.muted {
+		font-size: 12pt;
 
+		text-shadow: none;
+		text-align: left;
+
+		color: rgba(255, 255, 255, 0.7);
 	}
 
 	h2 {
