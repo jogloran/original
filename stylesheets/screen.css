@@ -429,3 +429,17 @@ hr {
   max-width: 800px;
   max-height: 600px;
 }
+
+/* line 416, ../sass/screen.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #5a9fd7;
+  border-color: #78abd0;
+}
+
+/* line 422, ../sass/screen.scss */
+.btn-info {
+  color: #fff;
+  background-color: #3287cc;
+  border-color: #78abd0;
+}

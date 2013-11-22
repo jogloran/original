@@ -409,3 +409,19 @@ hr {
 	max-width: 800px;
 	max-height: 600px;
 }
+
+$button-colour: rgb(50, 135, 204);
+$border-colour: rgb(120, 171, 208);
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+color: #fff;
+background-color: lighten($button-colour, 10%);
+border-color: $border-colour;
+}
+
+.btn-info {
+color: #fff;
+background-color: $button-colour;
+border-color: $border-colour;
+}
+
