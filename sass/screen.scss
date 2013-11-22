@@ -15,6 +15,7 @@ a {
 	}
 }
 
+
 body {
 	line-height: 1.1;
 
@@ -213,6 +214,16 @@ section#feature-dark {
 		width: 112px;
 		height: 112px;
 		border: none;
+
+		@include transform(scale(0.7));
+		opacity: 0;
+	}
+
+	img.ban.womp {
+		opacity: 1.0;
+
+		@include transition(all 0.15s ease-in);
+		@include transform(scale(1.0));
 	}
 
 	h2 {

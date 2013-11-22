@@ -11,6 +11,7 @@
 
     <script src='/bower_components/jquery/jquery.min.js'></script>
     <script src="/bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
+    <script src='js/waypoints.min.js'></script>
     <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
 
     <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
@@ -29,6 +30,10 @@
       $('#bottom-call-to-action-subscribe').click(function() {
         $('#thanks').show('slow');
       });
+
+      $('section#feature-dark').waypoint(function(dir) {
+        $('img.ban').addClass('womp');
+      }, { offset: '100%' });
 
       // $('#bk').parallax('50%', 0.2, true);
     });
