@@ -232,53 +232,59 @@ section#feature-dark img {
   height: 200px;
 }
 /* line 212, ../sass/screen.scss */
+section#feature-dark img.ban {
+  width: 112px;
+  height: 112px;
+  border: none;
+}
+/* line 218, ../sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 221, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 226, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 section#call-to-action {
   text-align: center;
   min-height: 380px;
   padding: 30px 36px;
   background-color: #e8e8e8;
 }
-/* line 240, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-bottom: 30px;
 }
-/* line 245, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 249, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 section#us {
   background-color: #9a9a9a;
   min-height: 200px;
   padding: 36px 36px;
   color: #202020;
 }
-/* line 267, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 section#us .column-header {
   text-shadow: 0px 2px 2px #ccc;
   text-align: center;
@@ -286,22 +292,22 @@ section#us .column-header {
   font-size: 10pt;
   padding-bottom: 12px;
 }
-/* line 278, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 section#us .built-with {
   padding: 30px 0;
   text-align: center;
   color: #6d6d6d;
 }
-/* line 285, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 section#us ul {
   text-align: center;
 }
-/* line 288, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 section#us ul li {
   padding-bottom: 4px;
   text-shadow: 0px 2px 2px #bb9;
 }
-/* line 294, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 section#us a {
   text-decoration: none;
   color: #202020;
@@ -337,7 +343,7 @@ section#us a {
   src: url("../fonts/Corbert Italic.otf");
 }
 
-/* line 330, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .category {
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
@@ -348,45 +354,45 @@ section#us a {
   padding-bottom: 12px;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #4d4d4d !important;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #4d4d4d !important;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 :-ms-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 #subscription-message {
   padding: 16px 0;
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .column-separator {
   text-align: center;
   padding: 8px 0;
 }
 
-/* line 367, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 hr {
   border-top: 1px solid #b8b8b8;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 #thanks {
   text-align: center;
   font-size: 14pt;
@@ -397,7 +403,7 @@ hr {
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 384, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   .flex-video {
     position: relative;
     padding-top: 25px;
@@ -407,7 +413,7 @@ hr {
     overflow: hidden;
   }
 
-  /* line 395, ../sass/screen.scss */
+  /* line 401, ../sass/screen.scss */
   .flex-video iframe,
   .flex-video object,
   .flex-video embed {
@@ -419,25 +425,25 @@ hr {
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 405, ../sass/screen.scss */
+  /* line 411, ../sass/screen.scss */
   .flex-video {
     padding-top: 0;
   }
 }
-/* line 408, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .flex-video .youtube-player {
   max-width: 800px;
   max-height: 600px;
 }
 
-/* line 416, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #5a9fd7;
   border-color: #78abd0;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .btn-info {
   color: #fff;
   background-color: #3287cc;

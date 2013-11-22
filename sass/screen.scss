@@ -209,6 +209,12 @@ section#feature-dark {
 		height: 200px;
 	}
 
+	img.ban {
+		width: 112px;
+		height: 112px;
+		border: none;
+	}
+
 	h2 {
 		font-size: 32pt;
 		padding-top: 30px;
@@ -424,4 +430,3 @@ color: #fff;
 background-color: $button-colour;
 border-color: $border-colour;
 }
-
