@@ -26,6 +26,10 @@
           },
       });
 
+      $('#bottom-call-to-action-subscribe').click(function() {
+        $('#thanks').show('slow');
+      });
+
       // $('#bk').parallax('50%', 0.2, true);
     });
     </script>
@@ -181,11 +185,16 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <div class="input-group">
-              <input type="email" class="form-control input-lg" placeholder='Email'/>
-              <span class="input-group-btn">
-                <button class="btn btn-lg btn-info">Sign up</button>
-              </span>
+            <form action="http://getcomposure.us3.list-manage1.com/subscribe/post?u=72d8e52b7d4a987cc2f7811df&amp;id=59dda3e24b" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="input-group">
+                <input type="email" autocomplete='off' value="" name="EMAIL" id="mce-EMAIL" class="form-control input-lg email" placeholder='Email' required/>
+                <span class="input-group-btn">
+                  <button type="submit" name="subscribe" id="bottom-call-to-action-subscribe" class="button btn btn-lg btn-info">Sign up</button>
+                </span>
+              </div>
+            </form>
+            <div id="thanks">
+              <i class="fa fa-thumbs-o-up"></i> Thanks. You'll be among the first to regain your composure.
             </div>
           </div>
         </div>
