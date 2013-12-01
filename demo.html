@@ -15,6 +15,30 @@
 	    <script src="/bower_components/textarea-hepler/textarea-helper.js"></script>
 
 	    <style>
+	    body {
+	    	padding-top: 30px;
+	    }
+	    .fields {
+	    	padding-top: 16px; 	
+	    	padding-bottom: 16px;
+	    }
+
+	    .fields .row {
+	    	padding: 6px 0;
+	    }
+
+	    .fields .row div:first-child {
+	    	text-align: right;
+	    	vertical-align: middle;
+
+	    	font-weight: bold;
+	    	position: relative;
+	    	top: 6px;
+	    	padding-right: 0;
+
+	    	color: #d8d8d8;
+	    	text-transform: uppercase;
+	    }
 	    ul {
 	    	margin: 0;
 	    	padding: 0;
@@ -50,7 +74,7 @@
 	    }
 
 	    .buttons {
-	    	margin: 4px 8px;
+	    	margin-bottom: 16px;
 	    }
 
 	    b {
@@ -147,32 +171,59 @@
 	    	$('#send').click(function() {
 	    		$('body').fadeOut('slow');
 	    	});
+
+	    	$('#form-to').val('Alexandra Chan <achan@albertina.co.uk>');
+	    	$('#form-cc').val('Legal counsel <counsel@saputo.com>');
+	    	$('#form-subject').val('Re: Enquiry re CGT');
 	    });
 	    </script>
 	</head>
 	<body>
-		<div class="pull-left">
-			<div class="buttons">
-			<button class="button btn btn-primary" id='send'><i class="fa fa-envelope-o"></i> Send</button>
+		<div class="container fields">
+			<div class="row">
+				<div class="col-sm-2">To</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-to'/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">Cc</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-cc'/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">Subject</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-subject'/>
+				</div>
 			</div>
 		</div>
-		<div class="pull-right">
-		<div class="buttons">
-		<div class="btn-group">
-			<div class="button btn btn-default"><i class="fa fa-reply"></i> Reply</div>
-			<div class="button btn btn-default"><i class="fa fa-reply-all"></i> Reply all</div>
-			<div class="button btn btn-default"><i class="fa fa-mail-forward"></i> Forward</div>
-		</div>	
-		</div>
-		<div class="clearfix"></div>
-		</div>
 
-		<textarea name="demo" id="demo" cols="60" rows="30" class='form-control'></textarea>
-		<div id='test'></div>
-		<div style='display: none; width: 500px' id='auto'>
-			<ul>
-				<li style='display:none'></li>
-			</ul>
+		<div class="container">
+			<div class="pull-left">
+				<div class="buttons">
+				<button class="button btn btn-primary" id='send'><i class="fa fa-envelope-o"></i> Send</button>
+				</div>
+			</div>
+			<div class="pull-right">
+			<div class="buttons">
+			<div class="btn-group">
+				<div class="button btn btn-default"><i class="fa fa-reply"></i> Reply</div>
+				<div class="button btn btn-default"><i class="fa fa-reply-all"></i> Reply all</div>
+				<div class="button btn btn-default"><i class="fa fa-mail-forward"></i> Forward</div>
+			</div>	
+			</div>
+			<div class="clearfix"></div>
+			</div>
+
+			<textarea name="demo" id="demo" cols="60" rows="30" class='form-control'></textarea>
+			<div id='test'></div>
+			<div style='display: none; width: 500px' id='auto'>
+				<ul>
+					<li style='display:none'></li>
+				</ul>
+			</div>
 		</div>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
