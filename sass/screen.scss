@@ -15,6 +15,7 @@ a {
 	}
 }
 
+
 body {
 	line-height: 1.1;
 
@@ -118,6 +119,7 @@ section#hero {
 
 	.muted {
 		font-size: 12pt;
+		line-height: 1.08;
 
 		text-shadow: none;
 		text-align: left;
@@ -208,6 +210,22 @@ section#feature-dark {
 		height: 200px;
 	}
 
+	img.ban {
+		width: 112px;
+		height: 112px;
+		border: none;
+
+		@include transform(scale(0.7));
+		opacity: 0;
+	}
+
+	img.ban.womp {
+		opacity: 1.0;
+
+		@include transition(all 0.15s ease-in);
+		@include transform(scale(1.0));
+	}
+
 	h2 {
 		font-size: 32pt;
 		padding-top: 30px;
@@ -215,7 +233,7 @@ section#feature-dark {
 	}
 
 	padding-bottom: 15px;
-	padding-top: 15px;
+	padding-top: 42px;
 
 	p {
 		font-size: 18pt;
@@ -286,6 +304,7 @@ section#us {
 
 		li {
 			padding-bottom: 4px;
+			text-shadow: 0px 2px 2px #bb9;
 		}
 	}
 
@@ -364,4 +383,61 @@ section#us {
 
 hr {
 	border-top: 1px solid #b8b8b8;
+}
+
+#thanks {
+	text-align: center;
+	font-size: 14pt;
+
+	padding-top: 20px;
+
+	display: none;
+
+	font-style: italic;
+	color: rgba(100, 100, 100, 0.7);
+}
+ 
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+	.flex-video {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 16px;
+	overflow: hidden;
+	}
+	
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
+}
+
+.flex-video .youtube-player {
+	max-width: 800px;
+	max-height: 600px;
+}
+
+$button-colour: rgb(50, 135, 204);
+$border-colour: rgb(120, 171, 208);
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+color: #fff;
+background-color: lighten($button-colour, 10%);
+border-color: $border-colour;
+}
+
+.btn-info {
+color: #fff;
+background-color: $button-colour;
+border-color: $border-colour;
 }

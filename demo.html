@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Landing page</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    
+	    <!-- <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
+	    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+
+	    <script src='/bower_components/jquery/jquery.min.js'></script>
+	    <script src="/bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
+	    <script src="/bower_components/textarea-hepler/textarea-helper.js"></script>
+
+	    <style>
+	    body {
+	    	padding-top: 30px;
+	    }
+	    .fields {
+	    	padding-top: 16px; 	
+	    	padding-bottom: 16px;
+	    }
+
+	    .fields .row {
+	    	padding: 6px 0;
+	    }
+
+	    .fields .row div:first-child {
+	    	text-align: right;
+	    	vertical-align: middle;
+
+	    	font-weight: bold;
+	    	position: relative;
+	    	top: 6px;
+	    	padding-right: 0;
+
+	    	color: #d8d8d8;
+	    	text-transform: uppercase;
+	    }
+	    ul {
+	    	margin: 0;
+	    	padding: 0;
+
+	    	list-style-type: none;
+	    }
+	    #auto {
+	    	border: 1px solid #d8d8d8;
+	    	padding: 4px;
+
+	    	box-shadow: 0px 4px 5px rgba(32, 32, 32, 0.5);
+	    	background-color: #f9f9f9;
+	    }
+
+		#auto ul li {
+			margin: 0;
+			padding: 2px;
+
+			font-size: 14pt;
+			color: #8d8d8d;
+		}
+		
+	    #auto ul li:hover {
+	    	background-color: #e8e8e8;
+	    }
+
+	    #demo {
+			font-family: 'Helvetica Neue';
+			/*font-weight: bold;*/
+			font-size: 18pt;
+
+			/*letter-spacing: -0.03em;*/
+	    }
+
+	    .buttons {
+	    	margin-bottom: 16px;
+	    }
+
+	    b {
+	    	font-weight: bold;
+	    }
+	    </style>
+
+	    <script>
+	    $(function() {
+	    	var state = -1;
+	    	var startOfSentence = -1;
+	    	var data = [
+	    		["Dear <b>Alexandra</b>,", "Hi <b>Alexandra</b>,", "Dear <b>Ms Chan</b>,"],
+	    		["Thanks for your message of <b>the 6th of September</b> regarding <b>CGT</b>.",
+	    		 "Thanks for your reply."],
+	    		["All assets you’ve acquired since tax on capital gains came into effect (on 20 September 1985) are subject to CGT unless specifically excluded.",
+	    		 "Individuals and small businesses can generally discount a capital gain by 50% if they hold the asset for more than one year."],
+	    		["Why don't we have the meeting at <b>4pm</b> in <b>Room Bondi</b>?",
+	    		 "When are you available to meet? My schedule is free from <b>4.00 onwards</b>.",
+	    		 "When are you available to meet?",
+	    		 "Why don't we table this for the time being?"],
+	    		["Thanks,", "Cheers,", "Yours sincerely,", "Kind regards,"],
+	    		["Peter", "Peter Waugh"],
+	    	];
+
+	    	function update() {
+	    		++state;
+	    		if (state === data.length) state = 0;
+
+	    		$('#auto ul li:not(:first)').remove();
+
+	    		var proto = $('#auto ul li')[0];
+    			for (var i in data[state]) {
+    				var clone = $(proto).clone(true);
+    				$('#auto ul').append(
+    					clone.html(data[state][i]).show()
+    				);
+    			}
+
+	    	}
+
+	    	var suppress = true;
+
+	    	$('#demo').textareaHelper();
+	    	$('#demo').on('keydown', function(evt) {
+	    		var key = evt.keyCode;
+	    		if (key === 190 || key == 13) {
+	    			startOfSentence = $('#demo')[0].selectionStart;
+	    			$('#test').append($('<p>').html(startOfSentence));
+	    		}
+
+	    		if (key === 13) suppress = true;
+	    		else suppress = false;
+	    	});
+
+	    	var timeoutId;
+
+	    	$('#demo').on('input propertychange', function(evt) {
+	    		if (suppress) return;
+
+	    		var pos = $('#demo').textareaHelper('caretPos');
+
+	    		clearTimeout(timeoutId);
+
+	    		timeoutId = setTimeout(function() {
+		    		console.log(pos.top + ' ' + pos.left);
+		    		$('#auto').css({
+		    			position: 'absolute',
+		    			top: pos.top + 'px',
+		    			left: (pos.left + 10) + 'px',
+		    		}).show();
+		    	}, 400);
+	    	});
+
+	    	$('#auto ul li').click(function() {
+	    		$('#auto').hide();
+	    		$('#demo').val($('#demo').val() + $(this).text());
+
+	    		// replace text starting from startOfSentence.. with $(this).text
+	    		var existingText = $('#demo').val();
+	    		var newText = existingText.slice(0, startOfSentence+1) + $(this).text();
+	    		$('#demo').val(newText);
+
+	    		var textarea = $('#demo')[0];
+	    		var len = $(textarea).val().length;
+	    		$('#demo')[0].setSelectionRange(len, len);
+	    		$('#demo').focus();
+
+	    		update();
+	    	});
+
+	    	update();
+
+	    	$('#send').click(function() {
+	    		$('body').fadeOut('slow');
+	    	});
+
+	    	$('#form-to').val('Alexandra Chan <achan@albertina.co.uk>');
+	    	$('#form-cc').val('Legal counsel <counsel@saputo.com>');
+	    	$('#form-subject').val('Re: Enquiry re CGT');
+	    });
+	    </script>
+	</head>
+	<body>
+		<div class="container fields">
+			<div class="row">
+				<div class="col-sm-2">To</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-to'/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">Cc</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-cc'/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">Subject</div>
+				<div class="col-sm-10">
+					<input type="text" class='form-control input-sm' id='form-subject'/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="pull-left">
+				<div class="buttons">
+				<button class="button btn btn-primary" id='send'><i class="fa fa-envelope-o"></i> Send</button>
+				</div>
+			</div>
+			<div class="pull-right">
+			<div class="buttons">
+			<div class="btn-group">
+				<div class="button btn btn-default"><i class="fa fa-reply"></i> Reply</div>
+				<div class="button btn btn-default"><i class="fa fa-reply-all"></i> Reply all</div>
+				<div class="button btn btn-default"><i class="fa fa-mail-forward"></i> Forward</div>
+			</div>	
+			</div>
+			<div class="clearfix"></div>
+			</div>
+
+			<textarea name="demo" id="demo" cols="60" rows="30" class='form-control'></textarea>
+			<div id='test'></div>
+			<div style='display: none; width: 500px' id='auto'>
+				<ul>
+					<li style='display:none'></li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
