@@ -24,6 +24,11 @@ To get the mailchimp JSONP url (undocumented), change 'post?' to 'post-json?' an
 For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh99f&c=?',
 */
 
+function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+}
+
+
 (function ($) {
     'use strict';
 
@@ -31,6 +36,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
         var form = this;
         var email = form.find('input[type=email]');
         var label = $('body').find('#subscription-message');
+	var src = getURLParameter("src");
 
         var settings = $.extend({
             'url': form.attr('action')
@@ -81,6 +87,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
             }
 
             var data = {};
+	    data["SRC"] = src;
             var dataArray = form.serializeArray();
             $.each(dataArray, function (index, item) {
                 data[item.name] = item.value;
