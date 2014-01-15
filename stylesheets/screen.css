@@ -188,7 +188,6 @@ img {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid rgba(75, 89, 102, 0.4);
 }
 
 /* line 171, ../sass/screen.scss */
@@ -228,8 +227,8 @@ section#feature-dark {
 }
 /* line 208, ../sass/screen.scss */
 section#feature-dark img {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 112px;
 }
 /* line 213, ../sass/screen.scss */
 section#feature-dark img.ban {
