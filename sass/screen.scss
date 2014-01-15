@@ -91,7 +91,7 @@ header {
 }
 
 #bk {
-	background: url(http://i.imgur.com/ENAmj7l.jpg) 50% 50%;
+	background: url('../images/mtn.jpg') 50% 50%;
 	background-size: cover;
 }
 
@@ -165,7 +165,7 @@ img {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 
-	border: 1px solid rgba(75, 89, 102, 0.4);
+	// border: 1px solid rgba(75, 89, 102, 0.4);
 }
 
 section#feature-white {
@@ -206,8 +206,8 @@ section#feature-dark {
 	color: #d8d8d8;
 
 	img {
-		width: 200px;
-		height: 200px;
+		width: 130px;
+		height: 112px;
 	}
 
 	img.ban {
@@ -440,4 +440,9 @@ border-color: $border-colour;
 color: #fff;
 background-color: $button-colour;
 border-color: $border-colour;
+}
+
+.translucent-back {
+	background-color: rgba(120, 171, 208, 0.5);
+	padding-top: 20px;
 }
