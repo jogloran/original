@@ -446,3 +446,7 @@ border-color: $border-colour;
 	background-color: rgba(120, 171, 208, 0.5);
 	padding-top: 20px;
 }
+
+.translucent-header {
+	@include background-image(linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0)));
+}
