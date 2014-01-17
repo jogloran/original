@@ -280,6 +280,10 @@ section#us {
 
 	$us-section-colour: rgb(32, 32, 32);
 	color: $us-section-colour;
+	
+	address {
+		text-shadow: 0px 2px 2px #ccc;
+	}
 
 	.column-header {
 		text-shadow: 0px 2px 2px #ccc;
@@ -445,6 +449,8 @@ border-color: $border-colour;
 .translucent-back {
 	background-color: rgba(120, 171, 208, 0.5);
 	padding-top: 20px;
+	
+	@include border-radius(5px);
 }
 
 .translucent-header {
