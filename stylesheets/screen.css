@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,50 +24,55 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 11, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+h3 {
+  font-family: "Roboto Slab Bold", sans-serif;
+}
+
+/* line 16, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 a:hover, a:focus {
   color: #decfad;
   -webkit-transition: color 0.6s ease;
@@ -76,20 +81,31 @@ a:hover, a:focus {
   transition: color 0.6s ease;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 22, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+.row-flipped {
+  text-align: right;
+}
+/* line 23, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+.row-flipped h3 {
+  text-align: right;
+}
+
+/* line 29, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 body {
   line-height: 1.1;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   overflow-x: hidden;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 43, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 h2 {
   font-family: 'Roboto Slab Bold';
   font-size: 42px;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 49, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header {
   width: 100%;
   color: white;
@@ -97,27 +113,27 @@ header {
   padding-left: 18px;
   padding-right: 18px;
 }
-/* line 48, ../sass/screen.scss */
+/* line 61, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header a {
   text-decoration: none;
   color: white;
 }
-/* line 53, ../sass/screen.scss */
+/* line 66, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header a:not(:first-child) {
   padding-left: 12px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 70, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .social i {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
-/* line 62, ../sass/screen.scss */
+/* line 75, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .logo img {
   vertical-align: middle;
   padding: 0;
   margin: 8px;
   border: 0px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 89, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .logo .brand {
   font-size: 28pt;
   font-weight: bold;
@@ -129,18 +145,18 @@ header .logo .brand {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 106, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #bk {
   background: url("../images/mtn.jpg") 50% 50%;
   background-size: cover;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 111, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 115, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero {
   text-align: center;
   width: 100%;
@@ -149,11 +165,11 @@ section#hero {
   padding: 8px 36px;
   text-shadow: 0px 2px 6px #6a6a6a;
 }
-/* line 116, ../sass/screen.scss */
+/* line 129, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero input {
   background: rgba(255, 255, 255, 0.7);
 }
-/* line 120, ../sass/screen.scss */
+/* line 133, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero .muted {
   font-size: 12pt;
   line-height: 1.08;
@@ -162,25 +178,25 @@ section#hero .muted {
   color: rgba(255, 255, 255, 0.7);
   font-style: italic;
 }
-/* line 131, ../sass/screen.scss */
+/* line 144, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero h2 {
   font-size: 36pt;
   padding-top: 60px;
   padding-bottom: 16px;
 }
-/* line 139, ../sass/screen.scss */
+/* line 152, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero p {
   font-size: 16pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 161, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero img.screenshot {
   width: 100%;
   margin-top: 60px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 172, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 img {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -190,46 +206,45 @@ img {
   border-radius: 5px;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 184, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white {
   background-color: #e8e8e8;
   min-height: 380px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 178, ../sass/screen.scss */
+/* line 191, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white h2 {
   font-size: 32pt;
   text-align: center;
   padding-top: 30px;
 }
-/* line 185, ../sass/screen.scss */
+/* line 198, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white p {
   font-size: 16pt;
   text-align: center;
   line-height: 1.5;
   padding: 30px 0;
 }
-/* line 194, ../sass/screen.scss */
+/* line 207, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white img {
   margin: 0 auto;
   vertical-align: middle;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 216, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark {
   background-color: #95a5a6;
-  text-align: center;
   color: #d8d8d8;
   padding-bottom: 15px;
   padding-top: 42px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 221, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img {
   width: 112px;
   height: 112px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 226, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img.ban {
   width: 112px;
   height: 112px;
@@ -241,7 +256,7 @@ section#feature-dark img.ban {
   transform: scale(0.7);
   opacity: 0;
 }
-/* line 223, ../sass/screen.scss */
+/* line 235, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img.ban.womp {
   opacity: 1.0;
   -webkit-transition: all 0.15s ease-in;
@@ -254,58 +269,65 @@ section#feature-dark img.ban.womp {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 230, ../sass/screen.scss */
+/* line 242, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 248, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+section#feature-dark h3 {
+  font-size: 22pt;
+  margin-top: 16px;
+  padding-bottom: 32px;
+}
+/* line 258, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 244, ../sass/screen.scss */
+/* line 263, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 270, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action {
   text-align: center;
   min-height: 380px;
   padding: 30px 36px;
   background-color: #e8e8e8;
 }
-/* line 258, ../sass/screen.scss */
+/* line 277, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-bottom: 30px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 282, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 267, ../sass/screen.scss */
+/* line 286, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 295, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us {
   background-color: #95a5a6;
   min-height: 200px;
   padding: 36px 36px;
   color: #202020;
 }
-/* line 285, ../sass/screen.scss */
+/* line 304, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us address {
   text-shadow: 0px 2px 2px #ccc;
+  line-height: 1.4;
 }
-/* line 289, ../sass/screen.scss */
+/* line 310, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us .column-header {
   text-shadow: 0px 2px 2px #ccc;
   text-align: center;
@@ -313,22 +335,22 @@ section#us .column-header {
   font-size: 10pt;
   padding-bottom: 12px;
 }
-/* line 300, ../sass/screen.scss */
+/* line 321, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us .built-with {
   padding: 30px 0;
   text-align: center;
   color: #6d6d6d;
 }
-/* line 307, ../sass/screen.scss */
+/* line 328, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us ul {
   text-align: center;
 }
-/* line 310, ../sass/screen.scss */
+/* line 331, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us ul li {
   padding-bottom: 4px;
   text-shadow: 0px 2px 2px #bb9;
 }
-/* line 316, ../sass/screen.scss */
+/* line 337, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us a {
   text-decoration: none;
   color: #202020;
@@ -364,7 +386,7 @@ section#us a {
   src: url("../fonts/Corbert Italic.otf");
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 373, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .category {
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
@@ -375,45 +397,45 @@ section#us a {
   padding-bottom: 12px;
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 385, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 389, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #4d4d4d !important;
 }
 
-/* line 372, ../sass/screen.scss */
+/* line 393, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #4d4d4d !important;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 397, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 :-ms-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 401, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #subscription-message {
   padding: 16px 0;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 405, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .column-separator {
   text-align: center;
   padding: 8px 0;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 410, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 hr {
   border-top: 1px solid #b8b8b8;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 414, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #thanks {
   text-align: center;
   font-size: 14pt;
@@ -424,7 +446,7 @@ hr {
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 406, ../sass/screen.scss */
+  /* line 427, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video {
     position: relative;
     padding-top: 25px;
@@ -434,7 +456,7 @@ hr {
     overflow: hidden;
   }
 
-  /* line 417, ../sass/screen.scss */
+  /* line 438, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video iframe,
   .flex-video object,
   .flex-video embed {
@@ -446,32 +468,32 @@ hr {
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 427, ../sass/screen.scss */
+  /* line 448, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video {
     padding-top: 0;
   }
 }
-/* line 430, ../sass/screen.scss */
+/* line 451, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .flex-video .youtube-player {
   max-width: 800px;
   max-height: 600px;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 459, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #5a9fd7;
   border-color: #78abd0;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 465, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .btn-info {
   color: #fff;
   background-color: #3287cc;
   border-color: #78abd0;
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 471, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .translucent-back {
   background-color: rgba(120, 171, 208, 0.5);
   padding-top: 20px;
@@ -482,7 +504,7 @@ hr {
   border-radius: 5px;
 }
 
-/* line 457, ../sass/screen.scss */
+/* line 478, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .translucent-header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(120, 171, 208, 0.7)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0));

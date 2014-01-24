@@ -8,6 +8,10 @@
 
 $light-colour: #e8e8e8;
 
+h3 {
+	font-family: "Roboto Slab Bold", sans-serif;
+}
+
 a {
 	&:hover, &:focus {
 	    color: rgb(222, 207, 173);
@@ -15,12 +19,21 @@ a {
 	}
 }
 
+.row-flipped {
+	h3 {
+		text-align: right;
+	}
+	text-align: right;
+}
 
 body {
 	line-height: 1.1;
 
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 	overflow-x: hidden;
+	
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
 }
 
 // button {
@@ -202,7 +215,6 @@ $dark-section-color: #95a5a6;
 
 section#feature-dark {
 	background-color: $dark-section-color;
-	text-align: center;
 
 	color: #d8d8d8;
 
@@ -231,6 +243,13 @@ section#feature-dark {
 		font-size: 32pt;
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+
+	h3 {
+		font-size: 22pt;
+		
+		margin-top: 16px;
+		padding-bottom: 32px;
 	}
 
 	padding-bottom: 15px;
@@ -284,6 +303,8 @@ section#us {
 	
 	address {
 		text-shadow: 0px 2px 2px #ccc;
+		
+		line-height: 1.4;
 	}
 
 	.column-header {
