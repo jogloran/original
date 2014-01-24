@@ -7,9 +7,23 @@
 @import "compass/css3";
 
 $light-colour: #e8e8e8;
+$cta-colour: #8cd69c;
+$dark-section-colour: lighten(#95a5a6, 40%);
+$head-font-name: "Roboto Slab";
+
+$shadow-colour: #fff;
+
+@mixin head-font {
+	font-family: $head-font-name, sans-serif;
+	text-shadow: 0 0 1px rgba(51,51,51,0.2);
+}
+
+hr {
+	border-top: 1px solid lighten(#95a5a6, 20%);
+}
 
 h3 {
-	font-family: "Roboto Slab Bold", sans-serif;
+	@include head-font;
 }
 
 a {
@@ -41,7 +55,7 @@ body {
 // }
 
 h2 {
-	font-family: 'Roboto Slab Bold';
+	@include head-font;
 
 	font-size: 42px;
 }
@@ -211,10 +225,12 @@ section#feature-white {
 	}
 }
 
-$dark-section-color: #95a5a6;
-
 section#feature-dark {
-	background-color: $dark-section-color;
+	background-color: $dark-section-colour;
+	
+	hr {
+		width: 40%;
+	}
 
 	color: #d8d8d8;
 
@@ -246,11 +262,15 @@ section#feature-dark {
 	}
 
 	h3 {
-		font-size: 22pt;
+		color: #2c3e50;
+		font-size: 24pt;
 		
 		margin-top: 16px;
-		padding-bottom: 32px;
+		padding-bottom: 24px;
 	}
+
+	color: #34495e;
+	font-size: 16pt;
 
 	padding-bottom: 15px;
 	padding-top: 42px;
@@ -272,11 +292,13 @@ section#call-to-action {
 	min-height: 380px;
 	padding: 30px 36px;
 
-	background-color: $light-colour;
+	background-color: $cta-colour;
 
 	h2 {
 		font-size: 32pt;
 		padding-bottom: 30px;
+		
+		color: white;
 	}
 
 	h3 {
@@ -293,7 +315,7 @@ section#call-to-action {
 }
 
 section#us {
-	background-color: $dark-section-color;
+	background-color: $dark-section-colour;
 	min-height: 200px;
 
 	padding: 36px 36px;
@@ -302,13 +324,13 @@ section#us {
 	color: $us-section-colour;
 	
 	address {
-		text-shadow: 0px 2px 2px #ccc;
+		// text-shadow: 0px 2px 2px $shadow-colour;
 		
 		line-height: 1.4;
 	}
 
 	.column-header {
-		text-shadow: 0px 2px 2px #ccc;
+		// text-shadow: 0px 2px 2px $shadow-colour;
 
 		text-align: center;
 		text-transform: uppercase;
@@ -330,7 +352,8 @@ section#us {
 
 		li {
 			padding-bottom: 4px;
-			text-shadow: 0px 2px 2px #bb9;
+			// text-shadow: 0px 2px 2px #bb9;
+			font-size: 8pt;
 		}
 	}
 
@@ -341,33 +364,8 @@ section#us {
 }
 
 @font-face {
-  font-family: 'Miso Bold';
-  src: url('../fonts/miso-bold.otf');
-}
-
-@font-face {
-  font-family: 'Miso Regular';
-  src: url('../fonts/miso-regular.otf');
-}
-
-@font-face {
-  font-family: 'Roboto Slab Bold';
+  font-family: $head-font-name;
   src: url('../fonts/RobotoSlab-Bold.ttf');
-}
-
-@font-face {
-	font-family: 'GeosansLight-Oblique';
-	src: url('../fonts/GeosansLight-Oblique.ttf');
-}
-
-@font-face {
-	font-family: 'Cicle Gordita';
-	src: url('../fonts/Cicle Gordita.ttf');
-}
-
-@font-face {
-	font-family: 'Corbert Italic';
-	src: url('../fonts/Corbert Italic.otf');
 }
 
 .category {
@@ -405,10 +403,6 @@ section#us {
 .column-separator {
 	text-align: center;
 	padding: 8px 0;
-}
-
-hr {
-	border-top: 1px solid #b8b8b8;
 }
 
 #thanks {
@@ -477,4 +471,8 @@ border-color: $border-colour;
 
 .translucent-header {
 	@include background-image(linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0)));
+}
+
+.nav-down-arrow a {
+	color: white;
 }
