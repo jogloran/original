@@ -40,6 +40,13 @@
         $('img.ban').addClass('womp');
       }, { offset: '85%' });
 
+      $('a#top-nav-down-arrow').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+      });
+
       // $('#bk').parallax('50%', 0.2, true);
     });
     </script>
@@ -103,7 +110,7 @@
             </p>
             <div class="call-to-action">
               <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 translucent-back">
+                <div class="col-sm-8 col-sm-offset-2 translucent-back">
                   <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate autocomplete='off'>
                     <div class="input-group">
                       <input type="email" autocomplete='off' value="" name="EMAIL" id="mce-EMAIL" class="form-control input-lg email" placeholder='Email' required/>
@@ -123,14 +130,23 @@
           <div class="col-sm-5" style="top: 60px">
             <div class="flex-video">
         <iframe class="youtube-player" type="text/html" src="http://www.youtube.com/embed/HxdONpqibhA?vq=hd720&rel=0" width="400" height="250" frameborder="0"></iframe>
-      </div>
+            </div>
+          </div>
+
+          <div class="nav-down-arrow" style="position: relative; top: 95px;">
+            <!-- <button class="btn"> -->
+              <a id="top-nav-down-arrow" href="#video">
+                <i class="fa fa-angle-double-down fa-4x"></i>
+              </a>
+            <!-- </button> -->
           </div>
         </div>
         
       </section>
     </div>
-    
+
     <section id="feature-dark">
+      <a id="video"></a>
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
@@ -141,6 +157,7 @@
                 Just install the add-in and it's ready to go, no setup.
               </div>
             </div>
+            <hr/>
             <div class="row">
               <div class="col-sm-6 col-sm-offset-2">
                 <h3>Everything's private.</h3>
@@ -148,6 +165,7 @@
               </div>
               <div class="col-sm-2"><img src="images/Privacy.png"/></div>
             </div>
+            <hr/>
             <div class="row">
               <div class="col-sm-2 col-sm-offset-2"><img src="images/Envelope.png"/></div>
               <div class="col-sm-6">
@@ -173,7 +191,7 @@
               <div class="input-group">
                 <input type="email" autocomplete='off' value="" name="EMAIL" id="mce-EMAIL" class="form-control input-lg email" placeholder='Email' required/>
                 <span class="input-group-btn">
-                  <button type="submit" name="subscribe" id="bottom-call-to-action-subscribe" class="button btn btn-lg btn-info"><i class="fa fa-angle-double-left"></i> Join the beta</button>
+                  <button type="submit" name="subscribe" id="bottom-call-to-action-subscribe" class="button btn btn-lg btn-warning"><i class="fa fa-angle-double-left"></i> Join the beta</button>
                 </span>
               </div>
               <p><h5 class="muted"><i class="fa fa-lock"></i> Your privacy is important to us, and we'll never spam you or sell your address.</h5></p>
@@ -212,15 +230,17 @@
                 Office
                 </div>
                 <ul>
-                <li><address>
-                  Composure<br/>
-                  Suite 145, 4 Cornwallis Street<br/>
-                  Eveleigh NSW 2015<br/>
-                  Australia
-                </address></li>
-                <li>
-                <i class="fa fa-phone"></i> <a href="tel:+61292094444">+61 2 9209 4444</a>
-                </li>
+                  <li>
+                    <address>
+                    Composure<br/>
+                    Suite 145, 4 Cornwallis Street<br/>
+                    Eveleigh NSW 2015<br/>
+                    Australia
+                    </address>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i> <a href="tel:+61292094444">+61 2 9209 4444</a>
+                  </li>
                 </ul>
               </div>
             </div>
