@@ -198,8 +198,10 @@ section#feature-white {
 	}
 }
 
+$dark-section-color: #95a5a6;
+
 section#feature-dark {
-	background-color: rgb(26, 25, 31);
+	background-color: $dark-section-color;
 	text-align: center;
 
 	color: #d8d8d8;
@@ -272,7 +274,7 @@ section#call-to-action {
 }
 
 section#us {
-	background-color: #9a9a9a;
+	background-color: $dark-section-color;
 	min-height: 200px;
 
 	padding: 36px 36px;
