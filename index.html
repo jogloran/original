@@ -40,6 +40,13 @@
         $('img.ban').addClass('womp');
       }, { offset: '85%' });
 
+      $('a#top-nav-down-arrow').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+      });
+
       // $('#bk').parallax('50%', 0.2, true);
     });
     </script>
@@ -120,12 +127,16 @@
               </div>
             </div>    
           </div>
+                <div class="nav-down-arrow" style="position: relative; top: 95px;">
+                    <a id="top-nav-down-arrow" href="#video"><i class="fa fa-angle-double-down fa-5x"></i></a>
+                </div>
         </div>
         
       </section>
     </div>
 
     <section id='feature-white'>
+        <a id="video"></a>
       <h2>Autocomplete your email.</h2>
       <div class="container">
         <div class="row">
